@@ -26,6 +26,7 @@ public static class AssemblyExtension
     {
         return GetAllFieldsWithAttribute(typeof(Type), typeof(AttributeType));
     }
+
     public static FieldInfo[] GetAllFieldsWithAttribute<T>(this Type type)
     {
         return GetAllFieldsWithAttribute(type, typeof(T));
